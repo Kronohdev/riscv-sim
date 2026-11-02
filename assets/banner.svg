@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-label="RISC-V Sim — simulador multiciclo RV32I">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1320"/>
+      <stop offset="1" stop-color="#1b2236"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2a900"/>
+      <stop offset="1" stop-color="#ff6b35"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#5c6784"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="280" rx="16" fill="url(#bg)"/>
+  <rect width="960" height="280" rx="16" fill="url(#grid)"/>
+
+  <text x="480" y="88" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="56" font-weight="800" fill="#ffffff">RISC-V <tspan fill="url(#accent)">Sim</tspan></text>
+  <text x="480" y="124" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18" fill="#9aa4bf">Simulador multiciclo RV32I · do assembly ao sinal de controle, ciclo a ciclo</text>
+
+  <g font-family="Consolas, Menlo, monospace" font-size="20" font-weight="700" text-anchor="middle">
+    <g transform="translate(150 170)">
+      <rect width="104" height="56" rx="10" fill="#232c45" stroke="#f2a900" stroke-width="2"/>
+      <text x="52" y="35" fill="#f2a900">IF</text>
+    </g>
+    <g transform="translate(284 170)">
+      <rect width="104" height="56" rx="10" fill="#232c45" stroke="#3a4566" stroke-width="2"/>
+      <text x="52" y="35" fill="#d6dcef">ID</text>
+    </g>
+    <g transform="translate(418 170)">
+      <rect width="104" height="56" rx="10" fill="#232c45" stroke="#3a4566" stroke-width="2"/>
+      <text x="52" y="35" fill="#d6dcef">EX</text>
+    </g>
+    <g transform="translate(552 170)">
+      <rect width="104" height="56" rx="10" fill="#232c45" stroke="#3a4566" stroke-width="2"/>
+      <text x="52" y="35" fill="#d6dcef">MEM</text>
+    </g>
+    <g transform="translate(686 170)">
+      <rect width="104" height="56" rx="10" fill="#232c45" stroke="#ff6b35" stroke-width="2"/>
+      <text x="52" y="35" fill="#ff6b35">WB</text>
+    </g>
+  </g>
+
+  <g stroke="#5c6784" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="256" y1="198" x2="280" y2="198"/>
+    <line x1="390" y1="198" x2="414" y2="198"/>
+    <line x1="524" y1="198" x2="548" y2="198"/>
+    <line x1="658" y1="198" x2="682" y2="198"/>
+  </g>
+  <path d="M738 228 V250 H202 V232" fill="none" stroke="#5c6784" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+</svg>
